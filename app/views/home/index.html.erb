@@ -1,0 +1,9 @@
+<% unless @new_session %>
+  <% if @blank_names %>
+    errors
+  <% else %>
+    <%= render :partial => 'home/result' %>
+  <% end %>
+<% end %>
+<%= render :partial => 'home/form' %>
+<%#= render(:partial => 'home/form', :locals => {:show_form => (@blank_names || @new_session)}) %>
