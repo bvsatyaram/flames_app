@@ -1,5 +1,9 @@
+<%= render :partial => 'home/result_ad' %>
 <div id="result">
-  <p>The relation between <%= @name1 %> and <%= @name2 %> is</p>
+  <p>The relation between <em><%= @name1 %></em> and <em><%= @name2 %></em> is</p>
   <h1><%= @relation %></h1>
-  <a href="#" onclick="$('result').hide(); $('form').show();">Flame another</a>
+  <p id="relation_hint">
+    <em> <%= flames_relation_hint(@relation) %> </em>
+  </p>
+  <a href="#" onclick="$('result').hide(); $('flames_form').show();" class="button">Predict another</a>
 </div>

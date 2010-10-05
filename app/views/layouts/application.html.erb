@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>FlamesApp</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
-</head>
-<body>
+  <head>
+    <title>FlamesApp</title>
+    <%= stylesheet_link_tag :all %>
+    <%= javascript_include_tag :defaults %>
+    <%= csrf_meta_tag %>
+    <%= render :partial => 'home/ga' %>
+  </head>
+  <body>
+    <div id="header">
+      <div id="header_wrapper">
+        <%= render :partial => 'home/header_ad' %>
+        <img src="/images/logo.jpg" alt="Flames" />
+      </div>
+    </div>
 
-<%= yield %>
+    <div id="wrapper">
+      <div id="sidebar">
+        <%= render :partial => 'home/sidebar_ad' %>
+      </div>
+      <div id="content">
+        <%= yield %>
+      </div>
+    </div>
 
-</body>
+    <div id="footer">
+      <div id="footer_wrapper">
+        <% 3.times do %>
+          <%= render :partial => 'home/footer_ad' %>
+        <% end %>
+
+        <p id="copyright"> Copyright &copy; 2010 <a href="http://bvsatyaram.com">B V Satyaram</a></p>
+      </div>
+    </div>
+  </body>
 </html>

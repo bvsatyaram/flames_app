@@ -1,0 +1,160 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: #F7F7F7;
+}
+
+h1, p {
+    margin: 0;
+}
+
+#header {
+    background:#DCDCDC;
+    height:95px;
+    width:100%;
+    color: #444444;
+    border-bottom: 1px solid #888888;
+}
+
+#header #header_wrapper {
+    width: 950px;
+    margin: 0 auto;
+}
+
+#header h1 {
+    float: left;
+}
+
+#header #header_ad {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 950px;
+    margin: 0 auto;
+    color: #444444;
+}
+
+#wrapper #sidebar {
+    float: right;
+}
+
+#wrapper #content {
+    padding-top: 40px;
+}
+
+#wrapper #content #result {
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+#wrapper #content #result h1 {
+    color: #CC5F88;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+#wrapper #content #result p#relation_hint {
+    margin-bottom: 15px;
+}
+
+#footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #888888;
+    clear: both;
+    background: #DCDCDC;
+    height: 130px;
+    color: #444444;
+}
+
+#footer #footer_wrapper {
+    width: 950px;
+    margin: 0 auto;
+}
+
+#footer .footer_ad_unit {
+    float: left;
+    margin-right: 110px;
+}
+
+#flames_form form {
+    margin-top: 20px;
+}
+
+#flames_form form label {
+    display: block;
+    float: left;
+    text-align: right;
+    width: 200px;
+    clear: left;
+    margin-top: 10px;
+}
+
+#flames_form form input {
+    color: #555555;
+    float: left;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 5px;
+    padding: 3px;
+    width: 300px;
+}
+
+#flames_form form input.button, #wrapper #content #result a.button {
+    clear: left;
+    background: #8FB165;
+    border: 1px solid #769253;
+    color: #FFFFFF;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#flames_form form input.button {
+    margin-left: 205px;
+    width: auto;
+}
+
+#footer #footer_wrapper p#copyright {
+    text-align: center;
+    font-size: 0.9em;
+    clear: both;
+    padding-top: 10px;
+}
+
+#footer #footer_wrapper a {
+    color: #555555;
+    text-decoration: underline;
+}
+
+#footer #footer_wrapper a:hover {
+    color: #444444;
+    text-decoration: none;
+}
+
+p.error_flash {
+    margin: 1em;
+    border: 1px solid #CC8888;
+    background: none repeat scroll 0 0 #FFEBE8;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 0.5em;
+    display: block;
+    width: 500px;
+}
+
+#flames_form .flames_initial {
+    color: #CC5F88;
+    font-size: 1.2em;
+    font-weight: bold;
+}
