@@ -70,7 +70,6 @@ h1, p {
     border-top: 1px solid #888888;
     clear: both;
     background: #DCDCDC;
-    height: 130px;
     color: #444444;
 }
 
@@ -127,7 +126,7 @@ h1, p {
 
 #footer #footer_wrapper p#copyright {
     text-align: center;
-    font-size: 0.9em;
+    font-size: 0.8em;
     clear: both;
     padding-top: 10px;
 }
@@ -157,4 +156,16 @@ p.error_flash {
     color: #CC5F88;
     font-size: 1.2em;
     font-weight: bold;
+}
+
+#hitcount {
+    clear:left;
+    font-style:italic;
+    padding:25px 0;
+}
+
+#hitcount .count {
+    font-weight: bold;
+    font-size: 2em;
+    color: #769253;
 }

@@ -3,9 +3,10 @@
   <%= render :partial => 'home/flames_intro' %>
   <%= form_tag '/' do  %>
     <%= label_tag "name1", "Your name" %>
-    <%= text_field_tag 'name1', '' %> <br />
+    <%= text_field_tag 'name1', @name1 %> <br />
     <%= label_tag "name2", "Your crush's name" %>
-    <%= text_field_tag 'name2' %> <br />
+    <%= text_field_tag 'name2', @name2 %> <br />
     <%= submit_tag "Predict FLAMES", :class => "button" %>
   <% end -%>
+  <div id="hitcount">The FLAMES tool has prophesied for <span class="count"><%=  @hitcount %></span> couples so far!!!</div>
 </div>
