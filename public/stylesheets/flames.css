@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     border: none;
-    background: #F7F7F7;
+    background: url("/images/page_bg.jpg") repeat scroll 0 0 #000000;
 }
 
 h1, p {
@@ -11,7 +11,7 @@ h1, p {
 }
 
 #header {
-    background:#DCDCDC;
+    background:url("/images/header_bg.png") repeat-x #1A1125;
     height:95px;
     width:100%;
     color: #444444;
@@ -33,18 +33,26 @@ h1, p {
     padding: 0;
 }
 
+#outer_wrapper {
+    background: url("/images/page_bg_t.jpg") no-repeat scroll 50% 0px transparent;
+    width: 100%;
+    padding-top: 20px;
+}
+
 #wrapper {
     width: 950px;
     margin: 0 auto;
-    color: #444444;
+    color: #CACACA;
+    background: url("/images/transparent_bg.png") repeat transparent;
+    border: 1px solid #888888;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    padding: 15px;
 }
 
 #wrapper #sidebar {
     float: right;
-}
-
-#wrapper #content {
-    padding-top: 40px;
 }
 
 #wrapper #content #result {
@@ -66,11 +74,9 @@ h1, p {
 #footer {
     width: 100%;
     margin: 0;
-    padding: 0;
-    border-top: 1px solid #888888;
+    padding: 20px 0 0;
     clear: both;
-    background: #DCDCDC;
-    color: #444444;
+    color: #CACACA;
 }
 
 #footer #footer_wrapper {
@@ -97,13 +103,18 @@ h1, p {
 }
 
 #flames_form form input {
-    color: #555555;
+    color: #CACACA;
     float: left;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: bold;
     margin: 5px;
-    padding: 3px;
-    width: 300px;
+    padding: 1px;
+    width: 240px;
+    background: transparent;
+    border: 1px solid #CACACA;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }
 
 #flames_form form input.button, #wrapper #content #result a.button {
@@ -116,7 +127,7 @@ h1, p {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    padding: 5px;
+    padding: 1px;
 }
 
 #flames_form form input.button {
@@ -126,25 +137,24 @@ h1, p {
 
 #footer #footer_wrapper p#copyright {
     text-align: center;
-    font-size: 0.8em;
+    font-size: 0.75em;
     clear: both;
     padding-top: 10px;
 }
 
 #footer #footer_wrapper a {
-    color: #555555;
+    color: #CACACA;
     text-decoration: underline;
 }
 
 #footer #footer_wrapper a:hover {
-    color: #444444;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
 p.error_flash {
     margin: 1em;
     border: 1px solid #CC8888;
-    background: none repeat scroll 0 0 #FFEBE8;
     font-size: 1.1em;
     font-weight: bold;
     padding: 0.5em;
@@ -168,4 +178,8 @@ p.error_flash {
     font-weight: bold;
     font-size: 2em;
     color: #769253;
+}
+
+.clearfix {
+    clear: both;
 }
