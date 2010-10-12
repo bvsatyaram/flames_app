@@ -5,5 +5,5 @@
   <p id="relation_hint">
     <em> <%= flames_relation_hint(@relation) %> </em>
   </p>
-  <a href="#" onclick="$('result').hide(); $('flames_form').show();" class="button">Predict another</a>
+  <%= link_to_function "Predict another", "$('result').blindUp(); $('flames_form').blindDown();", :class => "button" %>
 </div>

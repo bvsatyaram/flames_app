@@ -1,6 +1,7 @@
 <% unless @new_session %>
   <% if @blank_names %>
     <p class="error_flash"> Please enter valid name</p>
+    <%= render :partial => 'home/result_ad' %>
   <% else %>
     <%= render :partial => 'home/result' %>
   <% end %>

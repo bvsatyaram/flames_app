@@ -60,6 +60,10 @@ h1, p {
     margin-top: 15px;
 }
 
+#wrapper #content #result_ad {
+    margin-left: 220px;
+}
+
 #wrapper #content #result h1 {
     color: #CC5F88;
     font-size: 2em;
@@ -110,11 +114,14 @@ h1, p {
     margin: 5px;
     padding: 1px;
     width: 240px;
-    background: transparent;
     border: 1px solid #CACACA;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
+}
+
+html>/**/body #flames_form form input {
+    background: transparent;
 }
 
 #flames_form form input.button, #wrapper #content #result a.button {
