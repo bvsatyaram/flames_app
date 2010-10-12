@@ -4,10 +4,20 @@ body {
     padding: 0;
     border: none;
     background: url("/images/page_bg.jpg") repeat scroll 0 0 #000000;
+    font-family: helvetica, verdana, arial, sans-serif;
 }
 
 h1, p {
     margin: 0;
+}
+
+h1 {
+    font-family: georgia, 'times New Roman', serif;
+}
+
+h2#flames_description {
+    font-size: 1em;
+    font-weight: normal;
 }
 
 #header {
